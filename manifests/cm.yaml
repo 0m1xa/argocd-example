@@ -1,14 +1,10 @@
+kind: Secret
 apiVersion: v1
-kind: ConfigMap
 metadata:
-  name: vault-config-map
+  name: example-secret
   annotations:
-    avp.kubernetes.io/path: "avp/data/test"
     avp.kubernetes.io/remove-missing: true
-data:
-  # property-like keys; each key maps to a simple value
-  player_initial_lives: "3"
-  ui_properties_file_name: "user-interface.properties"
-  color.good: <sample1>
-  color.bad: yellow
-  allow.textmode: true   
+    avp.kubernetes.io/path: "avp/data/test"
+stringData:
+  username: <username>
+  password: <sample>
