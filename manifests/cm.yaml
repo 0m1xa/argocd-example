@@ -1,7 +1,7 @@
 kind: Secret
 apiVersion: v1
 metadata:
-  name: example-secret
+  name: example-secret1
   annotations:
     avp.kubernetes.io/remove-missing: true
     avp.kubernetes.io/path: "avp/data/test"
