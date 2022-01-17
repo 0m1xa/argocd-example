@@ -7,4 +7,4 @@ metadata:
     avp.kubernetes.io/path: "avp/data/test"
 stringData:
   username: <username>
-  password: <sample>
+  password: <password>
