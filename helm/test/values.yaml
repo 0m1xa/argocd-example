@@ -2,4 +2,4 @@ secret: <password>
 nginx:
   image:
     name: nginx
-    tag: 1.14.2
+    tag: 1.15.1
