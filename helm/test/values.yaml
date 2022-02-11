@@ -1,5 +1,5 @@
 secret: <password>
 nginx:
   image:
-    name: nginx
-    tag: 1.15.1
+    name: m1xa/nginx
+    tag: latest
