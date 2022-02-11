@@ -3,3 +3,4 @@ nginx:
   image:
     name: m1xa/nginx
     tag: latest
+    shasum: 
