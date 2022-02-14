@@ -1,0 +1,20 @@
+helm:
+  parameters:
+  - name: nginx.image.name
+    value: nexus-docker.local/nginx
+    forcestring: true
+  - name: nginx.image.tag
+    value: "1.13"
+    forcestring: false
+  - name: pullsecret.address
+    value: nexus-docker.local
+    forcestring: false
+  - name: pullsecret.password
+    value: "123"
+    forcestring: false
+  - name: pullsecret.username
+    value: admin
+    forcestring: false
+  - name: nginx.image.shasum
+    value: 1.15.2
+    forcestring: true
