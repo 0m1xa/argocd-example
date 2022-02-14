@@ -4,3 +4,9 @@ nginx:
     name: m1xa/nginx
     tag: latest
     shasum: 
+
+pullsecret:
+  address: https://index.docker.io/v1/
+  username: someuser
+  password: somepassword
+  create: true
