@@ -4,7 +4,7 @@ helm:
     value: nexus-docker.local/nginx
     forcestring: true
   - name: nginx.image.tag
-    value: "1.13"
+    value: 1.15.2
     forcestring: false
   - name: pullsecret.address
     value: nexus-docker.local
@@ -16,5 +16,5 @@ helm:
     value: admin
     forcestring: false
   - name: nginx.image.shasum
-    value: 1.15.2
+    value: 
     forcestring: true
