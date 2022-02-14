@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: "{{ .Values.nginx.image.name }}{{- if .Values.nginx.image.shasum }}@{{ .Values.nginx.image.shasum }}{{- else }}:{{ .Values.nginx.image.tag }}{{- end }}"
+        image: {{ include "generateImageName" . }}
         ports:
         - containerPort: 80
       {{- if .Values.pullsecret.create }}

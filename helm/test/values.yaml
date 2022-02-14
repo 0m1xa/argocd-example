@@ -2,8 +2,7 @@ secret: <password>
 nginx:
   image:
     name: m1xa/nginx
-    tag: latest
-    shasum: 
+    tag: 123
 
 pullsecret:
   address: https://index.docker.io/v1/
