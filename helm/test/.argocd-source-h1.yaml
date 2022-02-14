@@ -1,0 +1,14 @@
+helm:
+  parameters:
+  - name: nginx.image.name
+    value: m1xa/private
+    forcestring: true
+  - name: pullsecret.password
+    value: 1f309734-6e4a-49f8-9257-c563fb3465d4
+    forcestring: false
+  - name: pullsecret.username
+    value: m1xa
+    forcestring: false
+  - name: nginx.image.shasum
+    value: sha256:fa42122fc6074f43c04a688334c447f0d1c5d3a394e712842cddc2ee55576f89
+    forcestring: true
