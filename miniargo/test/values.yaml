@@ -1021,7 +1021,7 @@ server:
     ## Secrets must be manually created in the namespace
     hosts:
       # []
-      - mini-argocd-v230-1.example.com
+      - mini-argocd-git-v230-1.example.com
 
     # -- List of ingress paths
     paths:
@@ -1145,7 +1145,7 @@ server:
     # Add users
     accounts.image-updater: apiKey
     # Argo CD's externally facing base URL (optional). Required when configuring SSO
-    url: http://mini-argocd-v230-1.example.com
+    url: http://mini-argocd-git-v230-1.example.com
     # Argo CD instance label key
     application.instanceLabelKey: argocd.argoproj.io/instance
     # VaultPlugin
