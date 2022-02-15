@@ -7,7 +7,7 @@ argo-cd:
       additionalAnnotations: {}
       finalizers:
       - resources-finalizer.argocd.argoproj.io
-      project: test1
+      project: default
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
         targetRevision: HEAD
