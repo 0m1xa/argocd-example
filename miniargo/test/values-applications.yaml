@@ -2,7 +2,7 @@ argo-cd:
   server:
     additionalApplications:
     - name: guestbook
-      namespace: mini-argo-git-1
+      namespace: miniargo-git-1
       additionalLabels: {}
       additionalAnnotations: {}
       finalizers:

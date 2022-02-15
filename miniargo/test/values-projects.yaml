@@ -2,7 +2,7 @@ argo-cd:
   server:
     additionalProjects:
     - name: test1
-      namespace: mini-argo-git-1
+      namespace: miniargo-git-1
       additionalLabels: {}
       additionalAnnotations: {}
       finalizers:
