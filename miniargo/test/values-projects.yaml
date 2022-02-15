@@ -5,8 +5,7 @@ argo-cd:
       namespace: miniargo-git-1
       additionalLabels: {}
       additionalAnnotations: {}
-      finalizers:
-      - resources-finalizer.argocd.argoproj.io
+      finalizers: []
       description: Example Project
       sourceRepos:
       - '*'

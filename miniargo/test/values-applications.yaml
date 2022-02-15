@@ -5,8 +5,7 @@ argo-cd:
       namespace: miniargo-git-1
       additionalLabels: {}
       additionalAnnotations: {}
-      finalizers:
-      - resources-finalizer.argocd.argoproj.io
+      finalizers: []
       project: test1
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
@@ -20,7 +19,6 @@ argo-cd:
       syncPolicy:
         automated:
           prune: true
-          selfHeal: true
         syncOptions:
         - CreateNamespace=true
       ignoreDifferences:
