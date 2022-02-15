@@ -4,7 +4,8 @@ argo-cd:
     - name: test1
       namespace: miniargo-git-1
       additionalLabels: {}
-      additionalAnnotations: {}
+      additionalAnnotations:
+        "helm.sh/hook": post-install,post-upgrade
       finalizers: []
       description: Example Project
       sourceRepos:
