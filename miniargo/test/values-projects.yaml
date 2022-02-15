@@ -1,0 +1,21 @@
+argo-cd:
+  server:
+    additionalProjects:
+    - name: test1
+      namespace: mini-argo-git-1
+      additionalLabels: {}
+      additionalAnnotations: {}
+      finalizers:
+      - resources-finalizer.argocd.argoproj.io
+      description: Example Project
+      sourceRepos:
+      - '*'
+      destinations:
+      - namespace: test2
+        server: https://kubernetes.default.svc
+      namespaceResourceWhitelist:
+      - group: '*'
+        kind: '*'
+      clusterResourceWhitelist:
+      - group: ''
+        kind: Namespace
