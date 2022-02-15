@@ -21,6 +21,8 @@ argo-cd:
         automated:
           prune: true
           selfHeal: true
+        syncOptions:
+        - CreateNamespace=true
       ignoreDifferences:
       - group: apps
         kind: Deployment
