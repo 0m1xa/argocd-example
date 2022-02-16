@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: client1-argo
+  name: client2-argo
   namespace: argocd230rc
 spec:
   destination:
     name: ''
-    namespace: client1-argo
+    namespace: client2-argo
     server: 'https://kubernetes.default.svc'
   source:
-    path: superargo/manifests/miniargos/helm_charts/client1
+    path: superargo/manifests/miniargo/helm_charts/client2
     repoURL: 'https://github.com/0m1xa/argocd-example.git'
     targetRevision: HEAD
     helm:

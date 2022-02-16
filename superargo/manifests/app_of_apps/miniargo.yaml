@@ -8,7 +8,7 @@ spec:
     namespace: argocd230rc
     server: 'https://kubernetes.default.svc'
   source:
-    path: superargo/manifests/miniargos/definitions
+    path: superargo/manifests/miniargo/definitions
     repoURL: 'https://github.com/0m1xa/argocd-example.git'
     targetRevision: HEAD
   project: default
