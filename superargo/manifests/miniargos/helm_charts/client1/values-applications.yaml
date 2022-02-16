@@ -2,7 +2,7 @@ argo-cd:
   server:
     additionalApplications:
     - name: guestbook
-      namespace: mini-argo-applications-helm
+      namespace: client1-argo
       additionalLabels: {}
       additionalAnnotations: {}
         # helm.sh/hook: post-install,post-upgrade
@@ -33,7 +33,7 @@ argo-cd:
       - name: url
         value: https://argoproj.github.io/
     - name: helm-hooks
-      namespace: mini-argo-applications-helm
+      namespace: client1-argo
       additionalLabels: {}
       additionalAnnotations: {}
         # "helm.sh/hook": post-install,post-upgrade
