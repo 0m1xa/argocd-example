@@ -1,39 +1,37 @@
 argo-cd:
   server:
-    additionalProjects: []
-    # - name: test1
-    #   namespace: mini-argo-applications-helm
-    #   additionalLabels: {}
-    #   additionalAnnotations: {}
-    #     # "helm.sh/hook": post-install,post-upgrade
-    #   finalizers: []
-    #   description: Example Project
-    #   sourceRepos:
-    #   - '*'
-    #   destinations:
-    #   - namespace: test2
-    #     server: https://kubernetes.default.svc
-    #   namespaceResourceWhitelist:
-    #   - group: '*'
-    #     kind: '*'
-    #   clusterResourceWhitelist:
-    #   - group: ''
-    #     kind: Namespace
-    # - name: test2
-    #   namespace: mini-argo-applications-helm
-    #   additionalLabels: {}
-    #   additionalAnnotations: {}
-    #     # "helm.sh/hook": post-install,post-upgrade
-    #   finalizers: []
-    #   description: Example Project
-    #   sourceRepos:
-    #   - '*'
-    #   destinations:
-    #   - namespace: test2-1
-    #     server: https://kubernetes.default.svc
-    #   namespaceResourceWhitelist:
-    #   - group: '*'
-    #     kind: '*'
-    #   clusterResourceWhitelist:
-    #   - group: ''
-    #     kind: Namespace
+    additionalProjects:
+    - name: client1-project-1
+      namespace: client1-argo
+      additionalLabels: {}
+      additionalAnnotations: {}
+      finalizers: []
+      description: Example Project
+      sourceRepos:
+      - '*'
+      destinations:
+      - namespace: client1-argo-ns1
+        server: https://kubernetes.default.svc
+      namespaceResourceWhitelist:
+      - group: '*'
+        kind: '*'
+      clusterResourceWhitelist:
+      - group: ''
+        kind: Namespace
+    - name: client1-project-2
+      namespace: client1-argo
+      additionalLabels: {}
+      additionalAnnotations: {}
+      finalizers: []
+      description: Example Project
+      sourceRepos:
+      - '*'
+      destinations:
+      - namespace: client1-argo-ns2
+        server: https://kubernetes.default.svc
+      namespaceResourceWhitelist:
+      - group: '*'
+        kind: '*'
+      clusterResourceWhitelist:
+      - group: ''
+        kind: Namespace
