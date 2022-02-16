@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mini-argos
+spec:
+  destination:
+    namespace: argocd230rc
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: argocd-example/superargo/manifests/miniargos/definitions
+    repoURL: 'https://github.com/0m1xa/argocd-example.git'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

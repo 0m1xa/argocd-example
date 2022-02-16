@@ -1,0 +1,39 @@
+argo-cd:
+  server:
+    additionalProjects: []
+    # - name: test1
+    #   namespace: mini-argo-applications-helm
+    #   additionalLabels: {}
+    #   additionalAnnotations: {}
+    #     # "helm.sh/hook": post-install,post-upgrade
+    #   finalizers: []
+    #   description: Example Project
+    #   sourceRepos:
+    #   - '*'
+    #   destinations:
+    #   - namespace: test2
+    #     server: https://kubernetes.default.svc
+    #   namespaceResourceWhitelist:
+    #   - group: '*'
+    #     kind: '*'
+    #   clusterResourceWhitelist:
+    #   - group: ''
+    #     kind: Namespace
+    # - name: test2
+    #   namespace: mini-argo-applications-helm
+    #   additionalLabels: {}
+    #   additionalAnnotations: {}
+    #     # "helm.sh/hook": post-install,post-upgrade
+    #   finalizers: []
+    #   description: Example Project
+    #   sourceRepos:
+    #   - '*'
+    #   destinations:
+    #   - namespace: test2-1
+    #     server: https://kubernetes.default.svc
+    #   namespaceResourceWhitelist:
+    #   - group: '*'
+    #     kind: '*'
+    #   clusterResourceWhitelist:
+    #   - group: ''
+    #     kind: Namespace

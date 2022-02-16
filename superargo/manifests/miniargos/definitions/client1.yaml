@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: client1-argo
+spec:
+  destination:
+    name: ''
+    namespace: client1-argo
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: superargo/manifests/miniargos/helm_charts/client1
+    repoURL: 'https://github.com/0m1xa/argocd-example.git'
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values-applications.yaml
+        - values-projects.yaml
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - CreateNamespace=true

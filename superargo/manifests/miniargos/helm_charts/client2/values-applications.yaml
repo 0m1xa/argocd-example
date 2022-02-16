@@ -1,0 +1,55 @@
+argo-cd:
+  server:
+    additionalApplications: []
+    # - name: guestbook
+    #   namespace: mini-argo-applications-helm
+    #   additionalLabels: {}
+    #   additionalAnnotations: {}
+    #     # helm.sh/hook: post-install,post-upgrade
+    #     # meta.helm.sh/release-name: mini-argo-applications-helm
+    #     # meta.helm.sh/release-namespace: mini-argo-applications-helm
+    #   finalizers: []
+    #   project: default
+    #   source:
+    #     repoURL: https://github.com/argoproj/argocd-example-apps.git
+    #     targetRevision: HEAD
+    #     path: guestbook
+    #     directory:
+    #       recurse: true
+    #   destination:
+    #     server: https://kubernetes.default.svc
+    #     namespace: test2
+    #   syncPolicy:
+    #     automated:
+    #       prune: true
+    #     syncOptions:
+    #     - CreateNamespace=true
+    #   ignoreDifferences:
+    #   - group: apps
+    #     kind: Deployment
+    #     jsonPointers:
+    #     - /spec/replicas
+    #   info:
+    #   - name: url
+    #     value: https://argoproj.github.io/
+    # - name: helm-hooks
+    #   namespace: mini-argo-applications-helm
+    #   additionalLabels: {}
+    #   additionalAnnotations: {}
+    #     # "helm.sh/hook": post-install,post-upgrade
+    #   finalizers: []
+    #   project: default
+    #   source:
+    #     repoURL: https://github.com/argoproj/argocd-example-apps.git
+    #     targetRevision: HEAD
+    #     path: helm-hooks
+    #     directory:
+    #       recurse: true
+    #   destination:
+    #     server: https://kubernetes.default.svc
+    #     namespace: test2
+    #   syncPolicy:
+    #     automated:
+    #       prune: true
+    #     syncOptions:
+    #     - CreateNamespace=true
