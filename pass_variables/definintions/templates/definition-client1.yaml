@@ -16,7 +16,7 @@ spec:
       valueFiles:
         - values.override.yaml
       parameters:
-        - name: client.helm-guestbook.replicaCount
+        - name: client.helmguestbook.replicaCount
           value: {{ .Values.client.helmguestbook.replicaCount | quote }}
   project: default
   syncPolicy:
