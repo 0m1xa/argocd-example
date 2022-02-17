@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app_of_apps_pass_var
+  name: app-of-apps-pass-var
   namespace: argocd230rc
 spec:
   destination:
