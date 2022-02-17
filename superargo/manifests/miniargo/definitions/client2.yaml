@@ -9,7 +9,7 @@ spec:
     namespace: client2-argo
     server: 'https://kubernetes.default.svc'
   source:
-    path: superargo/manifests/miniargo/helm_charts/client2
+    path: superargo/miniargo/helm_charts/client2
     repoURL: 'https://github.com/0m1xa/argocd-example.git'
     targetRevision: HEAD
     helm:
