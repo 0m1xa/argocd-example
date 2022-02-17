@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: helm-guestbook-w-vars
-  namespace: client1-argo-w-vars
+  namespace: pass-var-argo-client1
 spec:
   destination:
     name: ''

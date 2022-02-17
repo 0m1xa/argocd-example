@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: client1-argo-w-vars
+  name: pass-var-argo-client1
   namespace: argocd230rc
 spec:
   destination:
     name: ''
-    namespace: client1-argo-w-vars
+    namespace: pass-var-argo-client1
     server: 'https://kubernetes.default.svc'
   source:
     path: pass_variables/client1
