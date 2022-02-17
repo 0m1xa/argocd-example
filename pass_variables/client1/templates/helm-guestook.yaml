@@ -15,7 +15,7 @@ spec:
     helm:
       parameters:
         - name: replicaCount
-          value: {{ .Values.client.helm-guestbook.replicaCount }}
+          value: {{ .Values.client.helmguestbook.replicaCount }}
   project: default
   syncPolicy:
     automated:
