@@ -3,7 +3,7 @@ argo-cd:
     config:
       accounts.image-updater: apiKey
       application.instanceLabelKey: argocd.argoproj.io/instance
-      url: http://mini-argocd-client1.example.com
+      url: http://pass-vars-mini-argocd-client1
     ingress:
       annotations:
         kubernetes.io/ingress.class: nginx
@@ -12,7 +12,7 @@ argo-cd:
       enabled: true
       extraPaths: []
       hosts:
-        - mini-argocd-client1.example.com
+        - pass-vars-mini-argocd-client1.example.com
       https: false
       ingressClassName: ''
       labels: {}
