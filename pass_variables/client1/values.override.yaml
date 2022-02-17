@@ -1,5 +1,7 @@
 argo-cd:
   server:
+    extraArgs:
+     - --insecure
     config:
       accounts.image-updater: apiKey
       application.instanceLabelKey: argocd.argoproj.io/instance
