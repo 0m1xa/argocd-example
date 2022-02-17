@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: client1-argo-w-vars
+  namespace: argocd230rc
+spec:
+  destination:
+    name: ''
+    namespace: client1-argo-w-vars
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: pass_variables/client1
+    repoURL: 'https://github.com/0m1xa/argocd-example.git'
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.override.yaml
+      parameters:
+        - name: client.helm-guestbook.replicaCount
+          value: {{ .Values.client.helm-guestbook.replicaCount }}
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,3 @@
+client:
+  helm-guestbook:
+    replicaCount: 1

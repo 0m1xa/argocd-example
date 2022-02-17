@@ -1,0 +1,22 @@
+argo-cd:
+  server:
+    config:
+      accounts.image-updater: apiKey
+      application.instanceLabelKey: argocd.argoproj.io/instance
+      url: http://mini-argocd-client1.example.com
+    ingress:
+      annotations:
+        kubernetes.io/ingress.class: nginx
+        nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
+        nginx.ingress.kubernetes.io/ssl-passthrough: 'true'
+      enabled: true
+      extraPaths: []
+      hosts:
+        - mini-argocd-client1.example.com
+      https: false
+      ingressClassName: ''
+      labels: {}
+      pathType: Prefix
+      paths:
+        - /
+      tls: []
