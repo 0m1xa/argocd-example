@@ -1,8 +1,8 @@
-secret: <password>
+secret: fdf
 nginx:
   image:
-    name: m1xa/nginx
-    tag: 123
+    name: nginx
+    tag: 1.20
 
 pullsecret:
   address: https://index.docker.io/v1/
